@@ -5,7 +5,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE:= audio_policy.salsa
+LOCAL_MODULE:= audio_policy.es209ra
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_STATIC_LIBRARIES := libmedia_helper
 LOCAL_WHOLE_STATIC_LIBRARIES := libaudiopolicy_legacy
@@ -16,8 +16,7 @@ LOCAL_SHARED_LIBRARIES := \
     libutils \
     libmedia
 
-LOCAL_SRC_FILES:= \
-    AudioPolicyManager.cpp
+LOCAL_SRC_FILES:= AudioPolicyManager.cpp
 
 ifeq ($(BOARD_HAVE_BLUETOOTH),true)
   LOCAL_CFLAGS += -DWITH_A2DP
@@ -28,7 +27,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := audio.primary.salsa
+LOCAL_MODULE := audio.primary.es209ra
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_STATIC_LIBRARIES += libmedia_helper
 LOCAL_WHOLE_STATIC_LIBRARIES := libaudiohw_legacy
@@ -41,8 +40,7 @@ LOCAL_SHARED_LIBRARIES := \
     libhardware_legacy \
     libdl
 
-LOCAL_SRC_FILES :=\
-    AudioHardware.cpp
+LOCAL_SRC_FILES += AudioHardware.cpp
 
 LOCAL_CFLAGS += -fno-short-enums
 
