@@ -15,9 +15,9 @@ index 56cd33d..071132e 100644
 -    CMWallpapers \
      Apollo \
      CMUpdater \
-     CMFileManager
- 
- # Extra tools in CM
+     CMFileManager \
+     LockClock
+
 diff --git a/vendor/cm/config/common_full.mk b/vendor/cm/config/common_full.mk
 index 8d69ead..342b1c7 100644
 --- a/vendor/cm/config/common_full.mk

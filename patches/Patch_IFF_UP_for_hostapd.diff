@@ -1,7 +1,7 @@
-diff --git a/libsysutils/src/NetlinkEvent.cpp b/libsysutils/src/NetlinkEvent.cpp
+diff --git a/system/core/libsysutils/src/NetlinkEvent.cpp b/system/core/libsysutils/src/NetlinkEvent.cpp
 index 4beebb7..8add005 100644
---- a/libsysutils/src/NetlinkEvent.cpp
-+++ b/libsysutils/src/NetlinkEvent.cpp
+--- a/system/core/libsysutils/src/NetlinkEvent.cpp
++++ b/system/core/libsysutils/src/NetlinkEvent.cpp
 @@ -100,10 +100,16 @@ bool NetlinkEvent::parseBinaryNetlinkMessage(char *buffer, int size) {
                  switch(rta->rta_type) {
                  case IFLA_IFNAME:

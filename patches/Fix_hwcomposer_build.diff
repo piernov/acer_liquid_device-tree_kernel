@@ -1,7 +1,7 @@
-diff --git a/include/utils/Singleton.h b/include/utils/Singleton.h
+diff --git a/frameworks/native/include/utils/Singleton.h b/frameworks/native/include/utils/Singleton.h
 index c60680e..a42ce21 100644
---- a/include/utils/Singleton.h
-+++ b/include/utils/Singleton.h
+--- a/frameworks/native/include/utils/Singleton.h
++++ b/frameworks/native/include/utils/Singleton.h
 @@ -65,9 +65,9 @@ private:
   */
  
