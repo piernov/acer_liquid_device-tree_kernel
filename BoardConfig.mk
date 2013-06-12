@@ -128,7 +128,7 @@ DEVICE_RESOLUTION := 480x800
 TW_FLASH_FROM_STORAGE := true
 
 #Added by RomzesRover to get compileable cm10-1 (4.2.2)
-#TARGET_ARCH := arm   ARCH DO NEED FOT CM10 (4.1.2)
+TARGET_ARCH := arm
 TARGET_KERNEL_SOURCE := device/acer/salsa/kernel
 #Added by RomzesRover to get compileable cm10 & flashable device salsa & also edited kernel recovery and kernel for cm by [ray
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 0x00500000
