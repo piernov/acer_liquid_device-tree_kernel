@@ -130,6 +130,9 @@ TW_FLASH_FROM_STORAGE := true
 #Added by RomzesRover to get compileable cm10-1 (4.2.2)
 TARGET_ARCH := arm
 TARGET_KERNEL_SOURCE := device/acer/salsa/kernel
+TARGET_NO_HW_OVERLAY := true
+TARGET_USES_ION := false
+BOARD_HAVE_HDMI_SUPPORT := false
 #Added by RomzesRover to get compileable cm10 & flashable device salsa & also edited kernel recovery and kernel for cm by [ray
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 0x00500000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00500000
