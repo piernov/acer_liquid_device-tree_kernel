@@ -5,7 +5,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE:= audio_policy.es209ra
+LOCAL_MODULE:= audio_policy.salsa
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_STATIC_LIBRARIES := libmedia_helper
 LOCAL_WHOLE_STATIC_LIBRARIES := libaudiopolicy_legacy
@@ -27,7 +27,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := audio.primary.es209ra
+LOCAL_MODULE := audio.primary.salsa
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_STATIC_LIBRARIES += libmedia_helper
 LOCAL_WHOLE_STATIC_LIBRARIES := libaudiohw_legacy
