@@ -16,12 +16,12 @@ PRODUCT_DEVICE := salsa
 PRODUCT_MODEL := A1
 PRODUCT_MANUFACTURER := Acer
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=liquid \
-BUILD_FINGERPRINT=google/yakju/maguro:4.1.2/IMM76D/299849:user/release-keys \
-PRIVATE_BUILD_DESC="RomzesRover-ubuntu 4.1.2 IMM76D 299849 release-keys"
+BUILD_FINGERPRINT=acer/a1_generic1/a1/salsa:4.2.2/CM10.1/000001:userdebug/release-keys \
+PRIVATE_BUILD_DESC="piernov 4.2.2 CM10.1 000001 release-keys"
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := A1
-PRODUCT_VERSION_DEVICE_SPECIFIC := -Liquid-WAG-Team
+PRODUCT_VERSION_DEVICE_SPECIFIC := -CM10.1
 
 # Goo.im configuration (RomzesRover delete the goo manager !)
 #    GOO_VERSION := $(shell date +%Y%m%d)
