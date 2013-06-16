@@ -36,7 +36,7 @@ TARGET_CPU_ABI2 := armeabi
 BOARD_USES_GENERIC_AUDIO := false
  
 # Neon stuff
-#TARGET_ARCH := arm
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 ARCH_ARM_HAVE_ARMV7A_BUG := true
@@ -66,6 +66,7 @@ BOARD_VENDOR_QCOM_AMSS_VERSION := 6225
 BOARD_USES_QCOM_LIBS := true
 BOARD_USES_QCOM_LIBRPC := true
 BOARD_USES_QCOM_HARDWARE := true
+BOARD_USES_LEGACY_QCOM := true
 # to enable the GPS HAL
 BOARD_USES_QCOM_GPS := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := salsa
@@ -75,12 +76,13 @@ TARGET_PROVIDES_LIBAUDIO := true
 
 #Qcom
 TARGET_HAVE_BYPASS      := false
-#TARGET_USES_C2D_COMPOSITION := false
+TARGET_USES_C2D_COMPOSITION := false
 TARGET_USES_GENLOCK := true
 TARGET_GRALLOC_USES_ASHMEM := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DBINDER_COMPAT -DANCIENT_GL
 COMMON_GLOBAL_CFLAGS += -DQCOM_LEGACY_OMX
 BOARD_NEEDS_MEMORYHEAPPMEM := true
+TARGET_PROVIDES_LIBLIGHT := true
 
 #GPU (Graphics)
 BOARD_EGL_CFG := device/acer/salsa/proprietary/system/lib/egl/egl.cfg
@@ -108,7 +110,7 @@ BOARD_USES_LEGACY_RIL := true
 TARGET_USES_OLD_LIBSENSORS_HAL := true
 
 #kernel
-TARGET_KERNEL_SOURCE := device/acer/salsa/kernel
+TARGET_KERNEL_SOURCE := kernel/acer/salsa
 TARGET_KERNEL_CONFIG := cyanogenmod_salsa_defconfig
 BOARD_KERNEL_CMDLINE := console=null
 BOARD_KERNEL_BASE := 0x20000000
@@ -129,14 +131,6 @@ TARGET_RECOVERY_INITRC := device/acer/salsa/recovery.rc
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 DEVICE_RESOLUTION := 480x800
 TW_FLASH_FROM_STORAGE := true
-
-#Added by RomzesRover to get compileable cm10-1 (4.2.2)
-TARGET_ARCH := arm
-TARGET_KERNEL_SOURCE := device/acer/salsa/kernel
-TARGET_NO_HW_OVERLAY := true
-TARGET_USES_ION := false
-BOARD_HAVE_HDMI_SUPPORT := false
-#Added by RomzesRover to get compileable cm10 & flashable device salsa & also edited kernel recovery and kernel for cm by [ray
 
 #fs
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 0x00500000
