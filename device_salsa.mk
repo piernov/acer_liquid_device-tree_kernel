@@ -192,7 +192,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Added by RomzesRover to get bootable cm10_1
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.composition.type=mdp
+    debug.composition.type=mdp \
     debug.gr.numframebuffers=3
 
 # proprietary side of the device
@@ -205,3 +205,8 @@ PRODUCT_NAME := cm_salsa
 PRODUCT_DEVICE := salsa
 PRODUCT_MODEL := A1
 PRODUCT_MANUFACTURER := Acer
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1

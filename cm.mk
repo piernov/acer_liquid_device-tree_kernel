@@ -16,8 +16,8 @@ PRODUCT_DEVICE := salsa
 PRODUCT_MODEL := A1
 PRODUCT_MANUFACTURER := Acer
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=liquid \
-BUILD_FINGERPRINT=acer/a1_generic1/a1/salsa:4.2.2/CM10.1/000001:userdebug/release-keys \
-PRIVATE_BUILD_DESC="piernov 4.2.2 CM10.1 000001 release-keys"
+BUILD_FINGERPRINT=acer/a1_generic1/a1/salsa:4.2.2/JDQ39E/20130620:userdebug/release-keys \
+PRIVATE_BUILD_DESC="piernov 4.2.2 JDQ39E 20130620 release-keys"
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := A1
