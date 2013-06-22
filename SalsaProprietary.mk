@@ -80,9 +80,9 @@ PRODUCT_COPY_FILES += \
 ## (8) Camera
 PRODUCT_COPY_FILES += \
     device/acer/salsa/proprietary/system/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    device/acer/salsa/proprietary/system/lib/liboemcamera.so:obj/lib/liboemcamera.so \
-    device/acer/salsa/proprietary/system/lib/libcamera.so:system/lib/libcamera.so \
-    device/acer/salsa/proprietary/system/lib/libcamera.so:obj/lib/libcamera.so
+    device/acer/salsa/proprietary/system/lib/liboemcamera.so:obj/lib/liboemcamera.so
+#   device/acer/salsa/proprietary/system/lib/libcamera.so:system/lib/libcamera.so \
+#   device/acer/salsa/proprietary/system/lib/libcamera.so:obj/lib/libcamera.so
 
 ## (9) WiFi
 PRODUCT_COPY_FILES += \
@@ -142,10 +142,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/acer/salsa/proprietary/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
     device/acer/salsa/proprietary/system/etc/audio_policy.conf:system/etc/audio_policy.conf
-
-## (14) Misc
-# Added by RomzesRover to get compileable cm10
-PRODUCT_COPY_FILES += \
-   device/acer/salsa/proprietary/root/init.power.rc:root/init.power.rc
-   
-   

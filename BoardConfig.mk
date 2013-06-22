@@ -128,7 +128,11 @@ BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 #BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/acer/salsa/recovery/recovery_keys.c
 #TARGET_RECOVERY_PRE_COMMAND := "touch /cache/recovery/boot;sync;"
 #TARGET_RECOVERY_INITRC := device/acer/salsa/recovery.rc
-#TARGET_PREBUILT_RECOVERY_KERNEL := device/acer/salsa/recovery_kernel
+#  ------------------------------------------------------------------------------------------------------------
+# | !!! WARNING !!! If you want to copmile recovery you need to use only this prebuilt kernel !!! See it below |
+# | 			Also you need to comment line 111 in this file TARGET_KERNEL_SOURCE                    |
+#  ------------------------------------------------------------------------------------------------------------
+#TARGET_PREBUILT_RECOVERY_KERNEL := device/acer/salsa/recoverySpecialKernel
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun"
 #twrp recovery
 TARGET_RECOVERY_INITRC := device/acer/salsa/recovery.rc
@@ -139,9 +143,9 @@ TW_FLASH_FROM_STORAGE := true
 #fs
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 0x00500000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00500000
-#System setup to 260mb
-BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 0x10400000
-#UserData setup to 140Mb
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x08A00000 
+#System setup to 250mb
+BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 0xFA00000
+#UserData setup to 150Mb
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x9600000 
 BOARD_FLASH_BLOCK_SIZE := 4096
 
